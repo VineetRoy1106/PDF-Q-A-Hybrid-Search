@@ -17,9 +17,12 @@ nltk.download('punkt_tab')
 # Load environment variables from .env file
 load_dotenv()
 
-# Set Pinecone API key and Groq API key
-api_key = os.getenv("PINECONE_API_KEY")
-groq_api_key = os.getenv("GROQ_API_KEY")
+# # Set Pinecone API key and Groq API key
+# api_key = os.getenv("PINECONE_API_KEY")
+# groq_api_key = os.getenv("GROQ_API_KEY")
+
+api_key = st.secrets["PINECONE_API_KEY"]
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 # Initialize Pinecone client and create index if it doesn't exist
 index_name = "langchain-pinecone-hybrid-search"
