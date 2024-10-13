@@ -13,10 +13,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Step 5: Copy the application code into the container
 COPY . .
 
-# Step 6: Set environment variables (if you want defaults)
-# You can set default values here, but it's safer to use the .env file.
-ENV PINECONE_API_KEY=PINECONE_API_KEY
-ENV GROQ_API_KEY=GROQ_API_KEY
+# Step 6: Set environment variables (use Docker secrets or build arguments)
+ENV PINECONE_API_KEY=${PINECONE_API_KEY}
+ENV GROQ_API_KEY=${GROQ_API_KEY}
+
 
 # Run the NLTK downloader
 RUN python -m nltk.downloader punkt
