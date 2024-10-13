@@ -37,7 +37,7 @@ jobs:
       # Step 5: Push the Docker image to DockerHub (optional, if you want to push the image)
       - name: Push Docker image to DockerHub
         run: |
-          docker push your-dockerhub-username/your-app-name:latest
+          docker push vineetroy/pinecone-rag-groq-updated:latest
 
   # Job to deploy the Docker container (optional, depending on your deployment strategy)
   deploy:
@@ -53,7 +53,7 @@ jobs:
       # Step 2: Pull the latest Docker image from DockerHub (or any other registry)
       - name: Pull Docker image
         run: |
-          docker pull your-dockerhub-username/your-app-name:latest
+          docker pull vineetroy/pinecone-rag-groq-updated:latest
 
       # Step 3: Run Docker container (or any deployment commands you use)
       - name: Run Docker container
