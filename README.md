@@ -23,8 +23,12 @@ This Streamlit application combines powerful tools such as Pinecone, Groq, and H
 
 4. **Interactive User Interface**:
    - Built with Streamlit for a simple and intuitive user experience.
-  
+
+  ![quer3](https://github.com/user-attachments/assets/2c1be036-d7db-4f38-83c2-936367749a0e)
   ![Query1](https://github.com/user-attachments/assets/cec71e83-00fc-4ad9-b069-1b351bd89666)
+  ![query2](https://github.com/user-attachments/assets/fad59d87-30ad-45c8-bcc2-5efc86ce3939)
+
+
 
 
 ---
